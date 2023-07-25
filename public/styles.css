@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
+
+:root {
+
+    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Roboto Mono', monospace; */
+    --White: rgba(228, 238, 249, .5);
+    --border-blur: solid 4pxrgba(255, 255, 255, .5);
+    --box-shadow: 020px30px4pxrgba(0, 0, 0, .2);
+    --text: #F1EDED;
+
+}
+
+
+
+/* By element */
+/* body {
+    background-color: white;
+} */
+h2 {
+    margin-bottom: 40px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+button {
+    background-color: #9449CA;
+    color: white;
+    cursor: pointer;
+    width: 170px;
+    height: 100px;
+    border-radius: 40px;
+    border: 2px solid white;
+    margin-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: large;
+}
+
+body {
+
+    /* background-image: url(img/mohammad-shahhosseini.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    background-color: #44215D;
+}
+
+input {
+    display: none;
+}
+
+/* By Class . */
+
+.cards,
+.attacks-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 28px;
+}
+
+
+
+.bot-card {
+    /* display: flex; */
+    width: 300px;
+    height: 300px;
+    background: #13081B;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.bot-img {
+    width: 300px;
+    height: 220px;
+}
+
+.button-attack {
+    width: 150px;
+    height: 150px;
+    background: #13081B;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.attacks-div {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.pl-attacks,
+.pc-attacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* By ID # */
+#canva {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#canva button {
+
+    background-color: #9449CA;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid white;
+    margin: 10px 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+    flex-direction: column;
+}
+
+
+#bot-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#attack-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#messages {
+    background-color: #13081b;
+    width: 544px;
+    border-radius: 20px;
+    border-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+input:checked+label {
+    background-color: #5D8BF4;
+}
+
+@media (max-width: 550px) {
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attacks-cards {
+        flex-direction: row;
+        width: 100px;
+        height: 100px;
+    }
+
+    .bot-card {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+    }
+
+    .bot-img {
+        width: 90px;
+        height: 70px;
+    }
+
+    #bot-selection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+
+    #canva div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Combat</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Bot Selection Section -->
+    <section id="bot-selection">
+        <h1 class="title">Bot Combat </h1>
+
+        <h2 id="subtitle" class="subtitle">Please select your robot:</h2>
+
+        <!-- Bot Cards div -->
+        <div class="cards" id="bot-cards">
+
+        </div>
+
+        <button id="button-bot">Select</button>
+
+    </section>
+
+    <!-- Canvas section -->
+    <section id="canva">
+        <h2 class="title">Explore the map with your Bot</h2>
+        <canvas id="map"></canvas>
+        <button class="button" onmouseup="stopMovement()" onmousedown="moveUp()">Move Up</button>
+        <div>
+            <button class="button" onmouseup="stopMovement()" onmousedown="moveLeft()">Move Left</button>
+            <button class="button" onmouseup="stopMovement()" onmousedown="moveDown()">Move Down</button>
+            <button class="button" onmouseup="stopMovement()" onmousedown="moveRight()">Move Right</button>
+        </div>
+    </section>
+    <!-- Attack Selection Section -->
+    <section id="attack-selection">
+        <h1 class="title">Bot Combat</h1>
+
+        <h2 id="subtitle" class="subtitle">Please select 5 Attacks:</h2>
+
+        <!-- Attacks div  -->
+        <div class="attack-cards" id="attackCards">
+            <!-- <button id="button-fire" class="button-attack">Fire 🔥</button>
+            <button id="button-water" class="button-attack">Water 💦</button>
+            <button id="button-earth" class="button-attack">Earth 🪨</button> -->
+        </div>
+
+        <!-- Messages div -->
+        <div id="messages">
+            <p id="result">Good luck!</p>
+
+            <section id="reset">
+                <button id="button-restart">Restart</button>
+            </section>
+        </div>
+        <!-- Information div -->
+        <div class="attacks-div">
+            <div class="pl-attacks">
+                <p id="player-bot"></p>
+                <p id="player-lives">0</p>
+                <div id="player-Attacks"></div>
+                <!-- <p>Your Bot has lives left</p> -->
+            </div>
+            <div class="pc-attacks">
+                <p id="pc-bot"></p>
+                <p id="pc-lives">0</p>
+                <div id="pc-Attacks"></div>
+                <!-- <p>Enemy's Bot <span id="pc-bot"></span> has <span id="pc-lives">3</span> lives left</p> -->
+            </div>
+        </div>
+        <div class="rules">
+            <p>RULES:</p>
+            <p>Fire beats Earth</p>
+            <p>Earth beats Water</p>
+            <p>Water beats Fire</p>
+        </div>
+    </section>
+    <script src="./BotCombat.js"></script>
+</body>
+
+</html>
